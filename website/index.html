@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Fusion - Semantic Weighted Prompt Layering</title>
+    <meta name="description" content="A sophisticated system for composing multi-layer prompts with intelligent priority management for AI agents.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎯 Prompt Fusion</h1>
+            <p class="tagline">Semantic Weighted Prompt Layering for AI Agents</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>The Problem</h2>
+                <p>When building AI agents, you need to combine static base instructions, dynamic workspace configuration, and role-based overlays. Traditional approaches fail to manage priorities effectively.</p>
+
+                <div class="comparison">
+                    <div class="bad">
+                        <h3>❌ Traditional Approaches</h3>
+                        <ul>
+                            <li>Simple concatenation → No clear priorities</li>
+                            <li>Numerical weights → LLMs ignore subtle differences</li>
+                            <li>Hardcoded prompts → Can't adapt to roles/contexts</li>
+                        </ul>
+                    </div>
+                    <div class="good">
+                        <h3>✅ Prompt Fusion</h3>
+                        <ul>
+                            <li>Semantic priorities → "CRITICAL" vs "MODERATE"</li>
+                            <li>Automatic conflict resolution → Explicit ordering</li>
+                            <li>Dynamic composition → Runtime role switching</li>
+                            <li>Framework agnostic → Works with any LLM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <p class="subtitle">Three-layer prompt management with intelligent semantic weighting</p>
+
+                <div class="layers">
+                    <div class="layer">
+                        <h3>Layer 1: Base</h3>
+                        <p>Tool definitions, safety rules, foundational constraints</p>
+                        <code>Weight: 20-60%</code>
+                    </div>
+                    <div class="layer">
+                        <h3>Layer 2: Brain</h3>
+                        <p>Workspace configuration, project context, user preferences</p>
+                        <code>Weight: 20-60%</code>
+                    </div>
+                    <div class="layer">
+                        <h3>Layer 3: Persona</h3>
+                        <p>Role-specific behavior, dynamic overlays</p>
+                        <code>Weight: 0-50%</code>
+                    </div>
+                </div>
+
+                <div class="weight-translation">
+                    <h3>Semantic Weight Translation</h3>
+                    <table>
+                        <tr>
+                            <th>Weight Range</th>
+                            <th>Semantic Label</th>
+                            <th>Meaning</th>
+                        </tr>
+                        <tr>
+                            <td>>= 0.6</td>
+                            <td>CRITICAL PRIORITY</td>
+                            <td>Dominates all other instructions</td>
+                        </tr>
+                        <tr>
+                            <td>>= 0.4</td>
+                            <td>HIGH IMPORTANCE</td>
+                            <td>Strong influence on behavior</td>
+                        </tr>
+                        <tr>
+                            <td>>= 0.2</td>
+                            <td>MODERATE GUIDANCE</td>
+                            <td>Balanced consideration</td>
+                        </tr>
+                        <tr>
+                            <td>&lt; 0.2</td>
+                            <td>OPTIONAL</td>
+                            <td>Background context only</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="code-example">
+            <div class="container">
+                <h2>Quick Example</h2>
+                <pre><code>import PromptFusionEngine from './core/promptFusionEngine.js';
+
+const engine = new PromptFusionEngine();
+
+const layers = {
+    base: "You are a helpful AI assistant. Never share private information.",
+    brain: "Working on: Customer Analytics. Format: JSON with citations.",
+    persona: "Role: Data Analyst. Focus: Statistical analysis and insights."
+};
+
+const weights = {
+    base: 0.2,    // Background rules
+    brain: 0.3,   // Project context
+    persona: 0.5  // Role behavior (DOMINANT)
+};
+
+const fusedPrompt = engine.semanticWeightedFusion(
+    layers.base,
+    layers.brain,
+    layers.persona,
+    weights
+);</code></pre>
+
+                <div class="output">
+                    <h3>Output:</h3>
+                    <pre><code>[BASE LAYER - MODERATE GUIDANCE]
+You are a helpful AI assistant. Never share private information.
+
+[BRAIN CONFIGURATION - MODERATE GUIDANCE]
+Working on: Customer Analytics. Format: JSON with citations.
+
+[PERSONA INSTRUCTIONS - CRITICAL PRIORITY - MUST FOLLOW]
+Role: Data Analyst. Focus: Statistical analysis and insights.
+
+[CONFLICT RESOLUTION RULES]
+When instructions conflict, apply this priority order:
+1. PERSONA instructions (weight: 0.5)
+2. BRAIN instructions (weight: 0.3)
+3. BASE instructions (weight: 0.2)</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="integrations">
+            <div class="container">
+                <h2>Framework Integration</h2>
+                <p>Works seamlessly with leading AI frameworks</p>
+
+                <div class="framework-grid">
+                    <div class="framework">
+                        <h3>LangChain</h3>
+                        <p>Use with <code>messageModifier</code> callback</p>
+                    </div>
+                    <div class="framework">
+                        <h3>OpenAI SDK</h3>
+                        <p>Use with <code>instructions</code> parameter</p>
+                    </div>
+                    <div class="framework">
+                        <h3>Anthropic Claude</h3>
+                        <p>Use with <code>system</code> parameter</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="use-cases">
+            <div class="container">
+                <h2>Use Cases</h2>
+                <div class="use-case-grid">
+                    <div class="use-case">
+                        <h3>Multi-Role AI Agents</h3>
+                        <p>Switch between analyst and researcher roles dynamically without restart</p>
+                    </div>
+                    <div class="use-case">
+                        <h3>Workspace-Specific Agents</h3>
+                        <p>Same base logic, different configurations for production vs development</p>
+                    </div>
+                    <div class="use-case">
+                        <h3>Hierarchical Instructions</h3>
+                        <p>Tool safety > Project rules > User preferences with automatic conflict resolution</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Get Started</h2>
+                <a href="https://github.com/OthmanAdi/promptfusion" class="button">View on GitHub</a>
+                <p class="license">MIT License - Open Source</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Created by <strong>Othman Adi</strong> - Full Stack Developer & AI Agents Orchestrator at migRaven</p>
+            <p><a href="https://othmanadi.com" target="_blank" style="color: white; text-decoration: underline;">othmanadi.com</a> | <a href="https://linkedin.com/in/codingwithadi" target="_blank" style="color: white; text-decoration: underline;">LinkedIn</a></p>
+        </div>
+    </footer>
+</body>
+</html>

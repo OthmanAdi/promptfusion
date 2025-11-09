@@ -1,0 +1,54 @@
+{
+  "name": "prompt-fusion",
+  "version": "1.0.0",
+  "description": "Semantic Weighted Prompt Layering for AI Agents",
+  "main": "core/promptFusionEngine.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Tests coming soon\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OthmanAdi/promptfusion.git"
+  },
+  "keywords": [
+    "ai",
+    "llm",
+    "prompt",
+    "prompt-engineering",
+    "langchain",
+    "openai",
+    "anthropic",
+    "claude",
+    "agents",
+    "prompt-composition",
+    "semantic-weighting"
+  ],
+  "author": "Othman Adi <https://othmanadi.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OthmanAdi/promptfusion/issues"
+  },
+  "homepage": "https://github.com/OthmanAdi/promptfusion#readme",
+  "devDependencies": {
+  },
+  "peerDependencies": {
+    "@langchain/langgraph": ">=0.0.19",
+    "@langchain/core": ">=0.1.0",
+    "@anthropic-ai/sdk": ">=0.9.0"
+  },
+  "peerDependenciesMeta": {
+    "@langchain/langgraph": {
+      "optional": true
+    },
+    "@langchain/core": {
+      "optional": true
+    },
+    "@anthropic-ai/sdk": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
