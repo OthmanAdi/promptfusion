@@ -10,6 +10,22 @@ A sophisticated system for composing multi-layer prompts with intelligent priori
 
 ---
 
+## 🙏 About
+
+Created by **Othman Adi**, Full Stack Developer and AI Agents Orchestrator at migRaven.
+
+This project emerged from practical challenges in building production AI agents that need to:
+- Balance multiple instruction sources
+- Adapt to different user roles
+- Maintain safety while being flexible
+- Work across different LLM providers
+
+**Connect:**
+- 🌐 Website: [othmanadi.com](https://othmanadi.com)
+- 💼 LinkedIn: [codingwithadi](https://linkedin.com/in/codingwithadi)
+
+---
+
 ## 🌟 What is Prompt Fusion?
 
 Prompt Fusion is a **three-layer prompt management system** that intelligently combines:
@@ -440,22 +456,6 @@ This project is about **exploration and discovery**. We're interested in:
 ## 📄 License
 
 MIT License - see [LICENSE](./LICENSE) file for details.
-
----
-
-## 🙏 About
-
-Created by **Othman Adi**, Full Stack Developer and AI Agents Orchestrator at migRaven.
-
-This project emerged from practical challenges in building production AI agents that need to:
-- Balance multiple instruction sources
-- Adapt to different user roles
-- Maintain safety while being flexible
-- Work across different LLM providers
-
-**Connect:**
-- 🌐 Website: [othmanadi.com](https://othmanadi.com)
-- 💼 LinkedIn: [codingwithadi](https://linkedin.com/in/codingwithadi)
 
 ---
 
