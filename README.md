@@ -13,7 +13,18 @@ A sophisticated system for composing multi-layer prompts with intelligent priori
 
 ## 🙏 About
 
-Created by **Othman Adi**, Full Stack Developer and AI Agents Orchestrator at migRaven.
+### The Author
+
+**Ahmad Othman Ammar Adi** (Othman Adi)
+
+Full Stack Developer, AI Agents Orchestrator, and passionate educator from Hama, Syria — now based in Berlin, Germany.
+
+- 🎓 **Education**: Completed apprenticeship in Computer Science
+- 👨‍🏫 **Teaching**: 8,000+ documented teaching lectures since 2020
+- 📚 **Formats**: Workshops (days to weeks), intensive courses (2-6 months), and long-term programs including multi-year weekend coding classes for kids
+- 💼 **Current Role**: AI Agents Orchestrator at migRaven
+
+### The Project
 
 This project emerged from practical challenges in building production AI agents that need to:
 - Balance multiple instruction sources
@@ -25,6 +36,7 @@ This project emerged from practical challenges in building production AI agents 
 - 🎯 Project Website: [promptsfusion.com](https://promptsfusion.com)
 - 🌐 Personal Website: [othmanadi.com](https://othmanadi.com)
 - 💼 LinkedIn: [codingwithadi](https://linkedin.com/in/codingwithadi)
+- 🐙 GitHub: [OthmanAdi](https://github.com/OthmanAdi)
 
 ---
 
