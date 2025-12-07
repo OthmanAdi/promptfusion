@@ -1,0 +1,16 @@
+{
+  "projectId": "promptfusion1",
+  "projectName": "promptfusion",
+  "sites": [
+    {
+      "$id": "promptfusion-site",
+      "name": "Prompt Fusion",
+      "framework": "analog",
+      "buildRuntime": "node-22",
+      "rootDirectory": "website",
+      "entrypoint": "index.html",
+      "buildCommand": "echo 'No build needed'",
+      "outputDirectory": "."
+    }
+  ]
+}

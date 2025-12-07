@@ -4,6 +4,7 @@
 
 A sophisticated system for composing multi-layer prompts with intelligent priority management. Designed for AI agents that need to balance foundational rules, workspace configurations, and dynamic role-based behavior.
 
+[![Website](https://img.shields.io/badge/Website-promptsfusion.com-black)](https://promptsfusion.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6)]()
 [![Framework Agnostic](https://img.shields.io/badge/Framework-Agnostic-green)]()
@@ -21,7 +22,8 @@ This project emerged from practical challenges in building production AI agents 
 - Work across different LLM providers
 
 **Connect:**
-- 🌐 Website: [othmanadi.com](https://othmanadi.com)
+- 🎯 Project Website: [promptsfusion.com](https://promptsfusion.com)
+- 🌐 Personal Website: [othmanadi.com](https://othmanadi.com)
 - 💼 LinkedIn: [codingwithadi](https://linkedin.com/in/codingwithadi)
 
 ---
@@ -471,4 +473,4 @@ MIT License - see [LICENSE](./LICENSE) file for details.
 
 **Questions? Ideas? Discoveries?**
 
-Open an issue or discussion on GitHub. We're curious what you'll build with this.
+Visit [promptsfusion.com](https://promptsfusion.com) or open an issue on GitHub. We're curious what you'll build with this.
