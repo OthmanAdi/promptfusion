@@ -1,3 +1,7 @@
+<div align="center">
+<img src="media/banner.png" alt="promptfusion" width="100%">
+</div>
+
 # 🎯 Prompt Fusion
 
 **Semantic Weighted Prompt Layering for AI Agents**
