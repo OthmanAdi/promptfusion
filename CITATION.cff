@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "promptfusion"
+abstract: "A three-layer prompt composition system for AI agents that translates numerical weights into semantic priorities that LLMs actually follow. Framework-agnostic, open source, built for production multi-agent orchestration."
+authors:
+  - family-names: Adi
+    given-names: Ahmad Othman Ammar
+    alias: OthmanAdi
+version: "1.0.0"
+date-released: "2025-11-09"
+license: MIT
+url: "https://github.com/OthmanAdi/promptfusion"
+repository-code: "https://github.com/OthmanAdi/promptfusion"
+keywords:
+  - prompt-engineering
+  - ai-agents
+  - multi-agent
+  - orchestration
+  - llm
+  - prompt-composition
+  - framework-agnostic
